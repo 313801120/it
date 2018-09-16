@@ -1,0 +1,19 @@
+【webtitle】分享互联网新闻_程序员_IT_编程_代码
+【webkeywords】分享互联网新闻_程序员_IT_编程_代码
+【webdescription】分享互联网新闻_程序员_IT_编程_代码
+【websitebottom】
+
+ 版权 sharembweb.com | Powered by PAAJCMS
+
+【/websitebottom】
+
+
+【templatesetcode】gb2312
+【webtemplate】/Templates2018/programe
+【webimages】/Templates2018/programe/Images
+【webcss】/Templates2018/programe/Css
+【webjs】/Templates2018/programe/Js
+【flags】|addwebsite|iscloseeditor|htmlrun|ziphtml|
+【websiteurl】http://sharembweb.com/
+
+ 

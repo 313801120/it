@@ -1,0 +1,25 @@
+【columnname】首页
+【columntype】首页
+【sortrank】0
+【filename】/
+【flags】|left|
+【parentid】-1 
+【target】
+【webtitle】
+【webkeywords】
+【webdescription】
+【isonhtml】0
+【bodycontent】
+
+【/bodycontent】
+-------------------------------
+【columnname】程序员
+【columntype】新闻
+【sortrank】2
+【filename】detail/index.html
+【templatepath】 
+【flags】|top|
+【parentid】-1
+【isonhtml】1  
+【sortsql】OrderBy hits desc
+【npagesize】30

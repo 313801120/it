@@ -1,0 +1,128 @@
+{$Include file='head.html' block='top'$} 
+<sPAn class="testspan">{$copyTemplateMaterial dir='模块功能列表/sharembweb/home/' isHandle='true'$}</sPAn>
+
+
+<sPAn class="testspan">{$copyTemplateMaterial dir='模块功能列表/sharembweb/home/' isHandle='true'$}</sPAn>
+
+
+<div class="mainwrap">            
+ 
+    <div class="sidebarleft">
+        <div class="positionwrap">{$detailPosition$}</div> 
+        <ul class="columnbox">
+            <li class="title"><h1>[$detailTitle$]</h1></li>
+            <li class="content">
+           <div class="articletimes">作者：[$glb_articleAuthor$] 发表于：[$glb_articleAdddatetime format_time='1'$]</div>
+                <div class="articlecontent">
+                [$detailContent$]
+                [$glb_aritcleRelatedTags$]
+                <ul class="updownarticlewrap">
+                <li>{$glb_upArticle$}</li>
+                <li>{$glb_downArticle$}</li>
+                </ul>
+                </div>
+            </li>
+        </ul>
+        
+        <ul class="columnbox">
+            <li class="title">相关文章</li>
+            <li class="content">
+            
+                <ul class="list"> 
+
+                    <sPAn class="testhidde">{$ArticleList columnname='[$glb_columnname$]' topnumb='8' addsql='where id<>[$glb_id$]' order by sortrank desc' default='[_2016年01月15日 14时11分]'$}</sPAn>
+                    <!--#[_2016年01月15日 14时11分]
+                    [list]<li><a href="[$url$]" title="[$title$]">[$title len='920'$]</a><span class="time">[$adddatetime format_time='7'$]</span></li>
+                    [/list] 
+                    #-->
+                </ul>
+            
+            </li>
+        </ul> 
+        
+        
+         <ul class="columnbox">
+            <li class="title">评论</li>
+            <li class="content">
+                <ul class="commentlist">
+
+
+                    <sPAn class="testhidde">{$CommentList topnumb='28' itemid='[$glb_Id$]' addsql='where isthrough<>0' default='[_2016年01月15日 Comment]'$}</sPAn>
+                    <!--#[_2016年01月15日 Comment]
+[list]<li class="usermsg">IP：[$ip$] &nbsp; 时间：[$adddatetime format_time='1'$]</li>
+<li class="contentcontent">[$bodycontent$]</li>
+<div><b>管理员回复：</b><font color="#FF0000">[$reply$]</font></div>
+<li class="line"></li>
+
+[/list]
+[list-end]<li class="usermsg">IP：[$ip$] &nbsp; 时间：[$adddatetime format_time='1'$]</li>
+<li class="contentcontent">[$bodycontent$]</li>
+<div><b>管理员回复：</b><font color="#FF0000">[$reply$]</font></div>
+<div class="clear10"></div>
+[/list-end]
+
+                    #-->
+                     
+                </ul> 
+              <form class="comment" name="formcomment" method="post" action="[$WEB_VIEWURL$]?act=savedata&stype=articlecomment&itemid=[$glb_Id$]" target="_blank"  onSubmit="return formSubmit()">
+                <textarea name="bodycontent" placeholder="我也来说两句..."></textarea>
+                <br>
+                验证码：<input type="text" name="yzm" id="yzm" style="width:100px;margin:6px 0;text-align:center;" class="inputstyle" /><img id="yzmimg" src="{$EDITORTYPE asp='/inc/yzm_7.[$EDITORTYPE$]' php='/inc_php/Include/YZM_7.[$EDITORTYPE$]' aspx='/inc_csharp/Include/YZM_7.aspx'$}" title="看不清楚，换一张" alt="看不清楚，换一张" style="cursor: pointer; vertical-align:middle;" onClick="this.src = '{$EDITORTYPE asp='/inc/yzm_7.[$EDITORTYPE$]' php='/inc_php/Include/YZM_7.[$EDITORTYPE$]' aspx='/inc_csharp/Include/YZM_7.aspx'$}?'+Math.random()*10000"/><br>         
+                
+                <input type="submit" class="mybtn" value="评论" />
+期待你一针见血的评论，Come on！
+              </form>
+<script language="javascript">
+function formSubmit(){
+    if(formcomment.bodycontent.value==""){
+        formcomment.bodycontent.focus();
+        alert("评论内容不能为空");
+        return false;
+    }
+    if(formcomment.yzm.value==''){
+        formcomment.yzm.focus();
+        alert('请输入验证码');
+        return false;
+    }
+}
+</script>
+
+            </li>
+        </ul>
+        
+        
+        
+    </div>
+    <div class="sidebarright">
+  
+        <ul class="columnbox">
+            <li class="title">推荐文章</li>
+            <li class="content">
+            
+                <ul class="list"> 
+
+                    <sPAn class="testhidde">{$ArticleList  topnumb='8' addsql='where flags like\'%|c|%\' order by sortrank desc' default='[_2016年01月15日 14时10分]'$}</sPAn>
+                    <!--#[_2016年01月15日 14时10分]
+                                    [list]<li><a href="[$url$]" title="[$title$]"[$abcolor$]>[$title len='80'$]</a></li>
+                                    [/list]
+                    [/list]
+                    #-->
+                </ul>
+            
+            </li>
+        </ul>
+        
+ 
+ 
+
+    
+    
+    </div>
+    <div class="clear"></div>
+</div>
+{$Include file='Foot.html' block='foot'$} 
+
+</body>
+</html>
+
+

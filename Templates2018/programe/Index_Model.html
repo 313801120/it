@@ -1,0 +1,400 @@
+{$Include file='head.html' block='top'$}
+ 
+ 
+<sPAn class="testspan">{$copyTemplateMaterial dir='模块功能列表/sharembweb/home/' isHandle='true'$}</sPAn>
+
+
+<div class="mainwrap">
+
+
+ 
+ 
+ 
+ 
+<div class="home_download">
+    <div class="container clear_float">
+    
+
+
+<!--#细节列表 ASPPHP通用#-->
+<sPAn class="testspan">{$ArticleList columnname='Download' addsql='where flags like \'%c%\' order by sortrank' topnumb='4' default='2016年07月14日 16时00分' $}</sPAn>
+
+ 
+ 
+  </div> 
+</div>
+<div class="clear10"></div>
+  
+<div class="mainwrap">
+
+<ul class="columnbox"><li class="title">模板下载<a href="{$GetColumnUrl columnname='模板下载'$}" class="more">更多&gt;&gt;</a></li>
+
+<style>
+.okcasewrap,.okcasewrapright{float:left;border:1px solid #CCCCCC;padding:3px;position:relative;margin-top:10px;margin:10px 15px 10px 0}
+.okcasewrapright{margin-right:0px}
+.okcasewrap .footerwrap,.okcasewrapright .footerwrap{display:block;width:100%;height:32px;background-color:#000000;opacity:0.3;position:absolute;bottom:0;left:0;overflow:hidden;/*自动隐藏文字*/}
+.okcasewrap a,.okcasewrapright a{display:block;width:100%;height:30px;line-height:32px;position:absolute;bottom:0;left:0;text-align:center;color:#FFFFFF;font-size:14px;}
+.okcasewrap a:hover,.okcasewrapright a:hover{background-color:#000;font-weight:bold}
+</style>
+
+<li class="content">
+            <!--#细节列表 ASPPHP通用#-->
+<sPAn class="testspan">{$ArticleList columnname='模板下载'  topnumb='8' addsql='order by sortrank' default='[_2016年03月07日 07时56分]'$}</sPAn>
+ 
+<!--#[_2016年03月07日 07时56分]
+[list]
+<div class="okcasewrap" ><img src="[$smallimage$]" width="220" height="143" alt="Canvas音乐炫酷播放器"><div class="footerwrap"></div><a href="[$url$]"[$atitle$][$atarget$][$abcolor$][$anofollow$]>[$title$]</a></div> 
+
+[/list] 
+[list-mod4] 
+<div class="okcasewrap" style="margin-right:0px; "><img src="[$smallimage$]" width="220" height="143" alt="Canvas音乐炫酷播放器"><div class="footerwrap"></div><a href="[$url$]"[$atitle$][$atarget$][$abcolor$][$anofollow$]>[$title$]</a></div> 
+
+[/list-mod4] 
+#--> 
+
+</li>
+<li class="clear10"></li> 
+
+
+  
+</ul> 
+</div>
+
+<div class="clear10"></div>
+
+    <div class="mainwrap">
+
+
+
+        <div id="page">
+        
+
+
+<sPAn class="testspan">{$ArticleList columnname='常用工具' topnumb='28' addsql='order by sortrank'  default='[_2016年03月21日 13时28分]'$}</sPAn>
+<!--#[_2016年03月21日 13时28分]
+[list]
+            <div class="item">
+                <div class="item-inner">
+                    <div class="item-hd">
+                    <a target="_blank" href="[$url$]"[$anofollow$] class="item-icon"><span class="ico [$temptxt1$]"></span></a>
+                        <h3><a target="_blank" href="[$url$]"[$anofollow$]>[$title$]</a></h3>
+            
+                        <span class="item-category">[<a target="_blank" href="{$GetColumnUrl columnname='常用工具'$}">常用工具</a>]</span>
+                        <a title="喜欢" class="likeable" href="javascript:;" data-id="8"><i class="icon like"></i><var>1360</var>人喜欢</a> 
+                    </div>
+                    <div class="item-bd">
+                        <div class="item-desc">[$webtitle$]</div>
+                    </div>
+                    <div class="item-ft">
+                        <a target="_blank" class="item-link" href="[$url$]"[$anofollow$]>[$url$]</a>
+                        <a target="_blank" class="item-btn" href="[$url$]"[$anofollow$]>进入</a>
+                    </div>
+            
+                </div>
+            </div>
+[/list] 
+#-->
+
+
+
+ 
+
+ 
+            
+            
+        </div>
+
+        
+        <div class="clear"></div>
+        <div class="sidebarleft">
+        </div> 
+        <div class="sidebarright">
+        </div>
+        <div class="clear"></div>
+    </div>
+      
+  
+
+
+
+    <div class="sidebarleft">
+
+    
+        <ul class="columnbox">
+            <li class="title">最新公告<a href="{$GetOnePageUrl title='最新公告'$}" class="more">更多&gt;&gt;</a></li>
+            <li class="content">
+<sPAn class="testhidde">{$GetOnePageBody title='最新公告' default='没有最新公告' fieldname='aboutcontent' $}</sPAn>
+ 
+            </li>
+        </ul> 
+    
+
+  
+       
+ 
+        
+        
+        <ul class="columnbox">
+            <li class="title">PAAJCMS<a href="{$GetColumnUrl columnname='PAAJCMS'$}" class="more">更多&gt;&gt;</a></li>
+            <li class="content">
+            
+               <ul class="list">
+                <sPAn class="testhidde">{$ArticleList columnname='PAAJCMS'  topnumb='8' addsql=' order by id asc' default='[_2016年01月15日 PAAJCMS]'$}</sPAn>
+                <!--#[_2016年01月15日 PAAJCMS]
+                [list]<li><a href="[$url$]"[$atitle$][$atarget$][$abcolor$][$anofollow$]>[$title len='80'$]</a><span class="time">[$adddatetime format_time='7'$]</span></li>
+                [/list]
+                #-->
+              </ul>
+            
+            </li>
+        </ul>   
+        
+        
+        <ul class="columnbox">
+            <li class="title">在线ASP转PHP<a href="{$GetColumnUrl columnname='在线ASP转PHP'$}" class="more">更多&gt;&gt;</a></li>
+            <li class="content">
+            
+               <ul class="list">
+                    <sPAn class="testspan">{$ArticleList columnname='在线ASP转PHP' topnumb='8'  addsql=' order by id asc' default='[_2016年03月22日 14时33分]'$}</sPAn> 
+                    <!--#[_2016年03月22日 14时33分]
+                    [list]<li><a href="[$url$]"[$atitle$][$atarget$][$abcolor$][$anofollow$]>[$title len='80'$]</a><span class="time">[$adddatetime format_time='7'$]</span></li>
+                    [/list]
+                    #-->
+
+              </ul>
+            
+            </li>
+        </ul>   
+
+        
+        <ul class="columnbox">
+            <li class="title">作品展示<a href="{$GetColumnUrl columnname='作品展示'$}" class="more">更多&gt;&gt;</a></li>
+            <li class="content">
+            
+               <ul class="list">
+                <sPAn class="testhidde">{$ArticleList columnname='作品展示'  topnumb='8' addsql=' order by id asc' default='[_2016年01月15日 作品展示]'$}</sPAn>
+                <!--#[_2016年01月15日 作品展示]
+                [list]<li><a href="[$url$]"[$atitle$][$atarget$][$abcolor$][$anofollow$]>[$title len='80'$]</a><span class="time">[$adddatetime format_time='7'$]</span></li>
+                [/list]
+                #-->
+              </ul>
+            
+            </li>
+        </ul>
+        
+        
+
+        
+        
+        
+        <ul class="columnbox">
+            <li class="title">ASP<a href="{$GetColumnUrl columnname='ASP'$}" class="more">更多&gt;&gt;</a></li>
+            <li class="content">
+            
+               <ul class="list">
+                <sPAn class="testhidde">{$ArticleList columnname='ASP'  topnumb='8' addsql=' order by id desc' default='[_2016年01月15日 asp]'$}</sPAn>
+                <!--#[_2016年01月15日 asp]
+                [list]<li><a href="[$url$]"[$atitle$][$atarget$][$abcolor$][$anofollow$]>[$title len='80'$]</a><span class="time">[$adddatetime format_time='7'$]</span></li>
+                [/list]
+                #-->
+              </ul>
+            
+            </li>
+        </ul>
+        
+        
+        <ul class="columnbox">
+            <li class="title">原创文章<a href="{$GetColumnUrl columnname='原创文章'$}" class="more">更多&gt;&gt;</a></li>
+            <li class="content">
+            
+               <ul class="list">
+                <sPAn class="testhidde">{$ArticleList columnname='原创文章'  topnumb='8' addsql=' order by id desc' default='[_2016年01月15日 asp]'$}</sPAn>
+                <!--#[_2016年01月15日 asp]
+                [list]<li><a href="[$url$]"[$atitle$][$atarget$][$abcolor$][$anofollow$]>[$title len='80'$]</a><span class="time">[$adddatetime format_time='7'$]</span></li>
+                [/list]
+                #-->
+              </ul>
+            
+            </li>
+        </ul>
+        
+        
+        
+        <ul class="columnbox">
+            <li class="title">问答Q/A<a href="{$GetColumnUrl columnname='问答Q/A'$}" class="more">更多&gt;&gt;</a></li>
+            <li class="content">
+            
+               <ul class="list">
+                <sPAn class="testhidde">{$ArticleList columnname='问答Q/A'  topnumb='8' addsql=' order by id desc' default='[_2016年01月15日 asp]'$}</sPAn>
+                <!--#[_2016年01月15日 asp]
+                [list]<li><a href="[$url$]"[$atitle$][$atarget$][$abcolor$][$anofollow$]>[$title len='80'$]</a><span class="time">[$adddatetime format_time='7'$]</span></li>
+                [/list]
+                #-->
+              </ul>
+            
+            </li>
+        </ul>
+
+        <ul class="columnbox">
+            <li class="title">原创教程<a href="{$GetColumnUrl columnname='原创教程'$}" class="more">更多&gt;&gt;</a></li>
+            <li class="content">
+            
+               <ul class="list">
+                <sPAn class="testhidde">{$ArticleList columnname='原创教程'  topnumb='9' addsql=' order by id desc' default='[_2016年01月15日 asp]'$}</sPAn>
+                <!--#[_2016年01月15日 asp]
+                [list]<li><a href="[$url$]"[$atitle$][$atarget$][$abcolor$][$anofollow$]>[$title len='80'$]</a><span class="time">[$adddatetime format_time='7'$]</span></li>
+                [/list]
+                #-->
+              </ul>
+            
+            </li>
+        </ul>
+ 
+
+
+        
+    </div>
+    <div class="sidebarright">
+    
+
+        <ul class="columnbox">
+            <li class="title">最新下载</li>
+            <li class="content">
+                {$GetOnePageBody title='最新下载' default='没有最新公告' fieldname='bodycontent' $}
+            </li>
+        </ul>
+        
+        
+<!--#test start#-->  
+        <ul class="columnbox">
+            <li class="title">常用工具<a href="{$GetColumnUrl columnname='常用工具'$}" class="more">更多&gt;&gt;</a></li>
+            <li class="content">
+            
+            
+                <ul class="list"> 
+ 
+                    <sPAn class="testhidde">{$ArticleList columnname='常用工具' topnumb='8' addsql='order by sortrank asc' default='[_2016年01月15日 常用工具]'$}</sPAn>
+                    <!--#[_2016年01月15日 常用工具]
+                        [list]<li><a href="[$url$]"[$atitle$][$atarget$][$abcolor$][$anofollow$]>[$title len='80'$]</a></li>
+                        [/list]
+                    [/list]
+                    #-->
+                    
+                </ul>
+            
+            
+            
+            </li>
+        </ul>
+ <!--#test end#-->
+ 
+        <ul class="columnbox">
+            <li class="title">推荐文章</li>
+            <li class="content">
+            
+                <ul class="list"> 
+
+                    <sPAn class="testhidde">{$ArticleList  topnumb='8' addsql='where flags like\'%|c|%\' order by sortrank desc' default='[_2016年01月15日 14时10分]'$}</sPAn>
+                    <!--#[_2016年01月15日 14时10分]
+                        [list]<li><a href="[$url$]"[$atitle$][$atarget$][$abcolor$][$anofollow$]>[$title len='80'$]</a></li>
+                        [/list]
+                    [/list]
+                    #-->
+                </ul>
+            
+            </li>
+        </ul>
+        
+        
+        <ul class="columnbox">
+            <li class="title">最新文章</li>
+            <li class="content">            
+                <ul class="list"> 
+                        
+                    <sPAn class="testhidde">{$ArticleList topnumb='8' addsql=' order by adddatetime desc' default='[_2016年01月15日 14时10分]'$}</sPAn>        
+                    <!--#[_2016年01月15日 14时10分]
+                            [list]<li><a href="[$url$]"[$atitle$][$atarget$][$abcolor$][$anofollow$]>[$title len='80'$]</a></li>
+                            [/list]
+                    #-->
+            
+                </ul>
+            </li>
+        </ul>
+        
+        
+       <ul class="columnbox">
+            <li class="title">网站作品<a href="{$GetColumnUrl columnname='网站作品'$}" class="more">更多&gt;&gt;</a></li>
+            <li class="content">
+            
+               <ul class="list">
+                <sPAn class="testhidde">{$ArticleList columnname='网站作品'  topnumb='8' addsql=' order by id asc' default='[_2016年01月15日 网站作品]'$}</sPAn>
+                <!--#[_2016年01月15日 网站作品]
+                [list]<li><a href="[$url$]"[$atitle$][$atarget$][$abcolor$][$anofollow$]>[$title len='80'$]</a><span class="time">[$adddatetime format_time='7'$]</span></li>
+                [/list]
+                #-->
+              </ul>
+            
+            </li>
+        </ul>
+        
+        
+        <ul class="columnbox">
+            <li class="title">网络文摘<a href="{$GetColumnUrl columnname='网络文摘'$}" class="more">更多&gt;&gt;</a></li>
+            <li class="content">            
+                <ul class="list"> 
+                        
+                    <sPAn class="testhidde">{$ArticleList did='网络文摘' topnumb='8' addsql=' order by adddatetime desc' default='[_2016年01月15日 网络文摘]'$}</sPAn>        
+                    <!--#[_2016年01月15日 网络文摘]
+                            [list]<li><a href="[$url$]"[$atitle$][$atarget$][$abcolor$][$anofollow$]>[$title len='80'$]</a></li>
+                            [/list]
+                    #-->
+            
+                </ul>
+            </li>
+        </ul>
+        
+        
+        
+        <ul class="columnbox">
+            <li class="title">联系站长<a href="{$GetColumnUrl columnname='联系站长'$}" class="more">更多&gt;&gt;</a></li>
+            <li class="content">            
+            
+            {$GetColumnBody columnname='联系站长' fieldname='aboutcontent' default='无栏目内容'$}
+
+            </li>
+        </ul>
+        
+        
+        <ul class="columnbox">
+            <li class="title">意见反馈</li>
+            <li class="content">
+            
+<form name="formfeedback" action="http://sharembweb.com/Tools/ask.asp?act=feedback" method="post" onSubmit="return formSubmit()">
+  <textarea name="content" id="yjfkcontent" class="inputstyle"></textarea>
+  <div class="clear10"></div>
+  <input type="submit" name="button" id="button" value="提交" class="clickgrey3 radius5 btn btnclearfix">
+</form>
+
+<script language="javascript">
+function formSubmit(){
+    if(document.all.formfeedback.content.value==""){
+        document.all.formfeedback.content.focus();
+        alert("反馈内容不能为空");
+        return false;
+    }
+}
+</script>
+            
+            </li>
+        </ul>
+        
+    
+    </div>
+    <div class="clear"></div>
+</div>
+{$Include file='Foot.html' block='foot'$} 
+
+</body>
+</html>
+
+

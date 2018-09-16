@@ -1,0 +1,55 @@
+{$Include file='head.html' block='top'$} 
+<sPAn class="testspan">{$copyTemplateMaterial dir='模块功能列表/sharembweb/home/' isHandle='true'$}</sPAn>
+
+
+<div class="mainwrap">            
+ 
+    <div class="sidebarleft">
+        <div class="positionwrap">{$detailPosition$}</div> 
+        <ul class="columnbox">
+            <li class="title"><h1>[$detailTitle$]</h1></li>
+            <li class="content">
+           <div class="articletimes">作者：[$glb_articleAuthor$] 发表于：[$glb_articleAdddatetime format_time='1'$]</div>
+                <div class="articlecontent">
+                [$detailContent$]
+                [$glb_aritcleRelatedTags$]
+                <ul class="updownarticlewrap">
+                <li>{$glb_upArticle$}</li>
+                <li>{$glb_downArticle$}</li>
+                </ul>
+                </div>
+            </li>
+        </ul> 
+        
+        
+    </div>
+    <div class="sidebarright">
+     <ul class="columnbox">
+            <li class="title">相关文章</li>
+            <li class="content">
+            
+                <ul class="list"> 
+
+                    <sPAn class="testhidde">{$ArticleList columnname='[$glb_columnname$]' topnumb='30' addsql=' order by sortrank desc' default='[_2016年01月15日 xg]'$}</sPAn>
+                    <!--#[_2016年01月15日 xg]
+                                    [list]<li><a href="[$url$]" title="[$title$]"[$abcolor$]>[$title len='80'$]</a></li>
+                                    [/list]
+                    [/list]
+                    #-->
+                </ul>
+            
+            </li>
+        </ul>  
+ 
+
+    
+    
+    </div>
+    <div class="clear"></div>
+</div>
+{$Include file='Foot.html' block='foot'$} 
+
+</body>
+</html>
+
+
